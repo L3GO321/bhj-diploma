@@ -5,6 +5,72 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "id": "5n6wr2col4mta5sn"
+    },
+    {
+      "id": "5n6wr9fwl4mti1g4"
+    },
+    {
+      "id": "5n6wr538l4mtk3yw"
+    },
+    {
+      "id": "5n6wr6a0l4mtklgh"
+    },
+    {
+      "name": "sds",
+      "email": "googlik701@gmail.com",
+      "password": "dsd",
+      "id": "5n6wr6h0l4mtsyjy"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg@demo.ru",
+      "password": "11111",
+      "id": "5n6wr40ol4mu0d1k"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg1@demo.ru",
+      "password": "sdsd",
+      "id": "5n6wr94kl4mu4v05"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg2@demo.ru",
+      "password": "dcfd",
+      "id": "5n6wr94cl4mu7ki5"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg3@demo.ru",
+      "password": "dfdf",
+      "id": "5n6wr548l4mu7v2s"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg4@demo.ru",
+      "password": "sfsfasdf",
+      "id": "5n6wr26wl4muq27p"
+    },
+    {
+      "name": "Oleg",
+      "email": "googlik7011@gmail.com",
+      "password": "123",
+      "id": "5n6wr8f0l4mv76m6"
+    },
+    {
+      "name": "Oleg",
+      "email": "googlik70111@gmail.com",
+      "password": "123",
+      "id": "5n6wr4dcl4qwaxcq"
+    },
+    {
+      "name": "Oleg",
+      "email": "oleg10@demo.ru",
+      "password": "111",
+      "id": "5n6wrocl557lbeb"
     }
   ],
   "accounts": [
@@ -22,6 +88,11 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "vd",
+      "user_id": "5n6wrocl557lbeb",
+      "id": "5n6wr3cgl56s9826"
     }
   ],
   "transactions": [
@@ -159,6 +230,24 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "5n6wrapcl56s9cg0",
+      "type": "income",
+      "name": "Oleg",
+      "sum": 20,
+      "account_id": "5n6wr3cgl56s9826",
+      "user_id": "5n6wrocl557lbeb",
+      "created_at": "2022-07-04T13:33:40.031Z"
+    },
+    {
+      "id": "5n6wricl56s9o56",
+      "type": "expense",
+      "name": "sds",
+      "sum": 20,
+      "account_id": "5n6wr3cgl56s9826",
+      "user_id": "5n6wrocl557lbeb",
+      "created_at": "2022-07-04T13:33:55.193Z"
     }
   ]
 }
