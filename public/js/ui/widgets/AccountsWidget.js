@@ -30,18 +30,15 @@ class AccountsWidget {
      * вызывает AccountsWidget.onSelectAccount()
      * */
     registerEvents() {
-        const createAccountbtn = this.element.querySelector('.create-account');
-        const billElements = this.element.querySelectorAll('.account');
+        this.element.addEventListener('click', (e) => {
+            if (e.target.classList.contains('create-account')) {
+                App.getModal('createAccount').open();
+            }
 
-        createAccountbtn.addEventListener('click', () => {
-            App.getModal('createAccount').open();
+            const parent = e.target.closest('.account');
+
+            parent && this.onSelectAccount(parent);
         })
-
-        for (let i = 0; i < billElements.length; i++) {
-            billElements[i].addEventListener('click', () => {
-                this.onSelectAccount(billElements[i]);
-            })
-        }
     }
 
     /**
@@ -60,7 +57,6 @@ class AccountsWidget {
                 if (response && response.success) {
                     this.clear();
                     response.data.map(bill => this.renderItem(bill));
-                    this.registerEvents();
                 } else {
                     console.log(err);
                 }

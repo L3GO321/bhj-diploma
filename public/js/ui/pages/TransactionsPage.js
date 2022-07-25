@@ -34,26 +34,25 @@ class TransactionsPage {
      * */
     registerEvents() {
         const removeAccountbtn = this.element.querySelector('.remove-account');
-        const transactions = this.element.querySelectorAll('.transaction__remove');
+        const transactionBlock = this.element.querySelector('.content');
 
-        const removeAccListener = () => {
+        removeAccountbtn.addEventListener('click', () => {
             const isRemove = confirm('Вы действительно хотите удалить счёт?');
             if (isRemove) {
                 this.removeAccount();
             }
-        }
+        });
 
-        removeAccountbtn.removeEventListener('click', removeAccListener);
-        removeAccountbtn.addEventListener('click', removeAccListener);
+        transactionBlock.addEventListener('click', (e) => {
+            const parent = e.target.closest('.transaction__remove');
 
-        for (let i = 0; i < transactions.length; i++) {
-            transactions[i].addEventListener('click', () => {
+            if (parent) {
                 const isRemove = confirm('Вы действительно хотите удалить эту транзакцию?');
                 if (isRemove) {
-                    this.removeTransaction(transactions[i].dataset.id);
+                    this.removeTransaction(parent.dataset.id);
                 }
-            })
-        }
+            }
+        })
     }
 
     /**

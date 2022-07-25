@@ -88,11 +88,6 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
-    },
-    {
-      "name": "vd",
-      "user_id": "5n6wrocl557lbeb",
-      "id": "5n6wr3cgl56s9826"
     }
   ],
   "transactions": [
@@ -230,24 +225,6 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
-    },
-    {
-      "id": "5n6wrapcl56s9cg0",
-      "type": "income",
-      "name": "Oleg",
-      "sum": 20,
-      "account_id": "5n6wr3cgl56s9826",
-      "user_id": "5n6wrocl557lbeb",
-      "created_at": "2022-07-04T13:33:40.031Z"
-    },
-    {
-      "id": "5n6wricl56s9o56",
-      "type": "expense",
-      "name": "sds",
-      "sum": 20,
-      "account_id": "5n6wr3cgl56s9826",
-      "user_id": "5n6wrocl557lbeb",
-      "created_at": "2022-07-04T13:33:55.193Z"
     }
   ]
 }
